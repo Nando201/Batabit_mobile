@@ -11,47 +11,52 @@
 </head>
 <body>
     <header>
-        <div class="header__container">
-            <picture>
-                <img src="./assets/icons/logo.svg" alt="Logo de Batabit">
-            </picture>
-            <h1 class="header__title">La proxima revolucion en el intercambio de criptomonedas</h1>
+        <img src="./assets/icons/logo.svg" alt="Logo de Batabit">
+        <div class="header__title__container">
+            <h1>La proxima revolucion en el intercambio de criptomonedas</h1>
             <p>Batatabit te ayuda a navegar entre los diferentes precios y tendencias.</p>
-            <button class="header__button">
-                <p> Conoce Nuestros Planes </p> 
-                <img src="./assets/icons/arrow_down.svg" alt="">
-            </button>
+            <a class="header__button" href="">Conoce Nuestros Planes<span>i</span> </a>
         </div>
     </header>
     <main>
-        <section>
-            <picture>
-                <img src="./assets/img/bitcoin.svg" alt="">
-            </picture>
-            <h2>Visibilizan todas las tasas de cambio</h2>
-            <p>Traemos información en tiempo real de las casas de cambio y las monedas más importantes del mundo.</p>
-            <h3>Monedas</h3>
-            <table>
-                <tr>
-                    <td>Bitcoin</td>
-                    <td>$ 1.96 <img src="./assets/icons/trending-down.svg" alt=""></td>
-                </tr>
-                <tr>
-                    <td>Ethereum</td>
-                    <td>$ 0.07 <img src="./assets/icons/trending-up.svg" alt=""></td>
-                </tr>
-                <tr>
-                    <td>Ripple</td>
-                    <td>$ 2.15 <img src="./assets/icons/trending-down.svg" alt=""></td>
-                </tr>
-                <tr>
-                    <td>Stellar</td>
-                    <td>$ 4.96 <img src="./assets/icons/trending-down.svg" alt=""></td>
-                </tr>
-            </table>
-            <span>
-                <p><strong>Actualizado:</strong> 19 Julio 23:45 </p>
-            </span>
+        <section class="exchange-rates">
+            <div class="exchange-rates__img-container">
+            </div>
+            <div class="exchange-rates__description">
+                <h2>Visibilizan todas las tasas de cambio</h2>
+                <p>Traemos información en tiempo real de las casas de cambio y las monedas más importantes del mundo.</p>
+            </div>
+            <section class="exchange-rates__table">
+                <div class="exchange-rates__table exchange-rates__table--currency">
+                    <p class="exchange-rates__title"> Monedas</p>
+                    <div class="exchange-rates__table-container">
+                        <table>
+                            <tr>
+                               <!-- Example <td class="exchange-rates__item exchange-rates__item--top-left">Bitcoin</td>
+                                <td class="exchange-rates__item exchange-rates__item--top-right exchange-rates__item--right">$ 1.96</td> -->
+
+                                <td class="table__item-top-left">Bitcoin</td>
+                                <td class="table__item-top-right table__item-right">$ 1.96</td>
+                            </tr>
+                            <tr>
+                                <td>Ethereum</td>
+                                <td class="table__item-right">$ 0.07</td>
+                            </tr>
+                            <tr>
+                                <td>Ripple</td>
+                                <td class="table__item-right" >$ 2.15</td>
+                            </tr>
+                            <tr>
+                                <td class="table__item-bottom-left" >Stellar</td>
+                                <td class="table__item-bottom-right">$ 4.96</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="exchange-rates__table-date">
+                        <p><b>Actualizado:</b> 19 Julio 23:45 </p>
+                    </div>
+                </div>
+            </section>
         </section>
         <section>
             <img src="assets/icons/bridge_section.svg" alt="">

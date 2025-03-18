@@ -1,5 +1,21 @@
+/* Convencion
+    1. Posicionamiento
+    2. Model box
+    3. Tipografia
+    4. Visuales
+    5. Otros
+*/  
+
 :root{
-    --font-sans: "DM Sans", sans-serif;
+    --primary-color: #f7931a;
+    --primary-soft-color: #ffe9d5;
+    --secondary-color: #1a9af7;
+    --secondary-soft-color: #e7f5ff;
+    --dark-warm-color: #201e1c;
+    --dark-color: #282623;
+    --darker-light-color: #bababa;
+    --background-color: #faf8f7;
+    --light-color: #fff;
     --font-inter: 'Inter', sans-serif;
     --size-300:300;
 	--size-400:400;
@@ -15,68 +31,166 @@
 
 html{
     font-size: 62.5%;
-}
-
-body{
-    font-family: var(--font-sans);
+    font-family: "DM Sans", sans-serif;
 }
 
 header{
-    min-height: 334px;
-    padding: 2rem 1rem;
-    background: linear-gradient(#201E1C, #F7931A);
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.header__container{
-    padding: 1rem 1rem;
-    width: 80%;
-    height: inherit;
-    margin: 0 auto;
+    position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    gap: 4rem;
+    align-items: center;
+    width: 100%;
+    min-width: 320px; /*Tamaño mas pequño de disp */
+    height: 334px;
+    padding: 2rem 1rem;
+    text-align: center;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+}
+
+header img{
+    width: 150px;
+    height: 24px;
+    margin-top: 60px;
 }
 
 
-.header__title{
-    text-align: center;
+.header__title__container{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 218px;
+    margin-top: 40px;
+}
+
+
+.header__title__container h1 {
     font-size: 2.4rem;
-    color: white;
+    color: var(--light-color);
     line-height: 2.6rem;
-    font-weight: var(--size-700);
+    font-weight: bold;
 }
 
-header p{
+.header__title__container p{
+    margin-top: 25px;
     font-size: 1.4rem;
-    color: white;
+    font-weight: 500;
     line-height: 1.8rem;
-    text-align: center;
-    font-weight: var(--size-500);
-    color: #FFE9D4;
+    color: var(--primary-soft-color);
 }
 
-.header__button{
-    background-color: #FAF8F7;
-    border-radius: 0.4rem;
+.header__title__container .header__button{
+    position: absolute;
+    top: calc(100% - 24px); /*Resta la mitad del tamaño del boton */
+    display: block;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     width: 229px;
     height: 48px;
-    padding: 1.2rem 1.6rem;
+    padding: 12px 16px;
+    background-color: var(--background-color);
+    box-shadow: 0px 4px 8px rgb(89, 73, 30, 0.16);
     border: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    top: 60px;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--dark-warm-color);
 }
 
-.header__button p{
+
+main{
+    width: 100%;
+    height: auto;
+    background-color: var(--background-color);
+}
+
+.exchange-rates{
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.exchange-rates__description{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+.exchange-rates__img-container{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-image: url('assets/img/bitcoin.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.exchange-rates__description h2{
+    font-size: 2.4rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--dark-color);
+}
+
+.exchange-rates__description p{
+    margin-bottom: 30px;
     font-size: 1.4rem;
-    line-height: 100%;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: #757575;
+
+}
+
+.exchange-rates__table{
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px;
+    height: 360px;
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
+}
+
+.exchange-rates__title{
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    color: #FF9536;
     font-weight: var(--size-700);
-    color: #201E1C;
+}
+
+.exchange-rates__table-container{
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.exchange-rates__table-container table{
+    width: 100%;
+    height: 100%;
+}
+
+.exchange-rates__table-container td{
+    width: 50%;
+    font-size: 1.6rem;
+    font-weight: var(--size-500);
+    line-height: 1.9rem;
+    color: var(--darker-light-color);
+    background-color: #fff;
+}
+
+.exchange-rates__table-container  .table__item-right{
+    font-weight: var(--size-400);
+    color: #757575;
 }
