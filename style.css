@@ -190,7 +190,58 @@ main{
     background-color: #fff;
 }
 
-.exchange-rates__table-container  .table__item-right{
+.exchange-rates__table-container  .exchange-rates__item-right{
     font-weight: var(--size-400);
+    line-height: 1.7rem;
     color: #757575;
+}
+
+.exchange-rates__table-container  .exchange-rates__item--top-left{
+    border-radius: 15px 0 0 0;
+}
+
+.exchange-rates__table-container  .exchange-rates__item--top-right{
+    border-radius: 0 15px 0 0;
+}
+
+.exchange-rates__table-container  .exchange-rates__item--bottom-left{
+    border-radius: 0 0 0 15px;
+}
+
+.exchange-rates__table-container  .exchange-rates__item--bottom-right{
+    border-radius: 0 0 15px 0;
+}
+
+
+.exchange-rates__table-container .item__icon{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.exchange-rates__table-container .item__icon--down{
+    background-image: url('./assets/icons/trending-down.svg');
+}
+
+.exchange-rates__table-container .item__icon--up{
+    background-image: url('./assets/icons/trending-up.svg');
+}
+
+.exchange-rates__table-date{
+    width: max-content;
+    height: 30px;
+    margin: 15px auto 0;
+    padding: 8px;
+    background-color: var(--primary-soft-color);
+    border-radius: 8px;
+}
+
+.exchange-rates__table-date p{
+    font-family: var(--font-inter);
+    font-size: 1.2rem;
+    font-weight: var(--size-400);
 }
