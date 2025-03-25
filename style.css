@@ -282,3 +282,131 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.main-product__intro{
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.main-product__intro h2{
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--light-color);
+}
+
+.main-product__intro p{
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
+
+.main-product__cards-item{
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    min-height  : 150px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: var(--dark-color);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);;
+}
+
+.main-product__cards-icon{
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-product__cards-icon--clock{
+    background-image: url(./assets/icons/clock.svg);
+}
+.main-product__cards-icon--eye{
+    background-image: url(./assets/icons/eye.svg);
+}
+.main-product__cards-icon--dollar{
+    background-image: url(./assets/icons/dollar-sign.svg);
+}
+.main-product__cards-icon--check{
+    background-image: url(./assets/icons/check-circle.svg);
+}
+
+
+.main-product__cards-title{
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--light-color);
+}
+
+.main-product__cards-description{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
+
+.container__img-bitcoin{
+    width: 100%;
+    min-width: 320px;
+    height: 50vh;
+    background-image: url(./assets/img/bitcoin_background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.container__img-bitcoin h2{
+    text-align: center;
+    font-size: 2.4rem;
+    padding-top: 70px;
+    font-weight: var(--size-700);
+    line-height: 2.6rem;
+    color: var(--light-color);
+}
+
+.plans{
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    background-color: var(--background-color);
+}
+
+.plans__intro{
+    padding-top: 30px;
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.plans__intro h2{
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--dark-warm-color);
+}
+
+.plans__intro p{
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #757575;
+}

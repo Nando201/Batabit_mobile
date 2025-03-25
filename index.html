@@ -15,7 +15,7 @@
         <div class="header__title__container">
             <h1>La proxima revolucion en el intercambio de criptomonedas</h1>
             <p>Batatabit te ayuda a navegar entre los diferentes precios y tendencias.</p>
-            <a class="header__button" href="">Conoce Nuestros Planes<span>i</span> </a>
+            <a class="header__button" href="#plans">Conoce Nuestros Planes<span>i</span> </a>
         </div>
     </header>
     <main>
@@ -91,48 +91,49 @@
             </div>
             <section class="main-product__cards">
                 <article class="main-product__cards-item">
-                    <span class="main-product__cards-icon"></span>
+                    <span class="main-product__cards-icon main-product__cards-icon--clock"></span>
                     <p class="main-product__cards-title" >Tiempo real</p>
                     <p class="main-product__cards-description">Nuestro API toma información minuto a minuto sobre las tasas que más determinan el comportamiento.</p>
                 </article>
                 <article class="main-product__cards-item">
-                    <span class="main-product__cards-icon" ></span>
+                    <span class="main-product__cards-icon main-product__cards-icon--eye" ></span>
                     <p class="main-product__cards-title">No hay tasas escondidas</p>
                     <p class="main-product__cards-description" >Ni en la compra o al momento de exit, Batabit siempre te muestra el costo real de lo que estás adquiriendo.</p>
                 </article>
                 <article class="main-product__cards-item">
-                    <span class="main-product__cards-icon" ></span>
+                    <span class="main-product__cards-icon main-product__cards-icon--dollar" ></span>
                     <p class="main-product__cards-title">Compara monedas</p>
                     <p class="main-product__cards-description" >No más rumores, con Babtabit sabrás el valor real de cada moneda en el mercado actual.</p>
                 </article>
                 <article class="main-product__cards-item">
-                    <span class="main-product__cards-icon" ></span>
+                    <span class="main-product__cards-icon main-product__cards-icon--check" ></span>
                     <p class="main-product__cards-title">Información confiable</p>
                     <p class="main-product__cards-description">Nuestras fuentes están 100% verificadas y continuamos auditando su contenido mientras se actualizan.</p>
                 </article>
             </section>
         </section>
-        <section>
-            <h3>Conocelo hoy</h3>
-            <picture>
-                <img src="./assets/img/bitcoin_background.jpg" alt="">
-            </picture>
+        <section class="container__img-bitcoin">
+            <h2>Conocelo hoy</h2>
         </section>
-        <section>
-            <h2>Escoge el plan que mejor se ajuste a ti.</h2>
-            <p>Cualquier plan te da acceso completo a nuestra plataforma.</p>
-            <div class="plans__container">
-                <div class="plans__card">
-                    <span>Recomendado</span>
-                    <h3>Pago Anual</h3>
-                    <p>99</p>
-                    <p>*Ahorras $129 comparado al plan mensual.</p>
-                    <button>
-                        Escoger este
-                        <img src="./assets/arrow-right 1.png" alt="">
-                    </button>
-                </div>
+        <section id="plans" class="plans">
+            <div class="plans__intro">
+                <h2>Escoge el plan que mejor se ajuste a ti.</h2>
+                <p>Cualquier plan te da acceso completo a nuestra plataforma.</p>
             </div>
+            <section class="plans__cards-container">
+                <article class="plans__card">
+                    <p>Recomendado</p>
+                    <div class="plans__card-item">
+                        <h3>Pago Anual</h3>
+                        <p class="plans__card-cost"> <sup>$</sup> 99</p>
+                        <p>*Ahorras $129 comparado al plan mensual.</p>
+                        <button>
+                            Escoger este
+                            <span class="plans__card-button-icon"></span>
+                        </button>
+                    </div>
+                </article>
+            </section>
         </section>
     </main>
     <footer>
