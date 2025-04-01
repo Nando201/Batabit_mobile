@@ -12,7 +12,7 @@
 <body>
     <header>
         <img src="./assets/icons/logo.svg" alt="Logo de Batabit">
-        <div class="header__title__container">
+        <div class="header__title-container">
             <h1>La proxima revolucion en el intercambio de criptomonedas</h1>
             <p>Batatabit te ayuda a navegar entre los diferentes precios y tendencias.</p>
             <a class="header__button" href="#plans">Conoce Nuestros Planes<span>i</span> </a>
@@ -120,20 +120,23 @@
                 <h2>Escoge el plan que mejor se ajuste a ti.</h2>
                 <p>Cualquier plan te da acceso completo a nuestra plataforma.</p>
             </div>
-            <section class="plans__cards-container">
+            <div class="plans__cards-carousel">
                 <article class="plans__card">
-                    <p>Recomendado</p>
+                    <p class="plans__card-badge">Recomendado</p>
                     <div class="plans__card-item">
-                        <h3>Pago Anual</h3>
-                        <p class="plans__card-cost"> <sup>$</sup> 99</p>
-                        <p>*Ahorras $129 comparado al plan mensual.</p>
-                        <button>
+                        <h2>Pago Anual</h2>
+                        <div class="plans__card-cost">
+                            <sup class="plans__card-currency">$</sup>
+                            <p class="plans__card-amount">  99</p>
+                        </div>
+                        <p class="plans__card-description">*Ahorras $129 comparado al plan mensual.</p>
+                        <button class="plans__card-button">
                             Escoger este
                             <span class="plans__card-button-icon"></span>
                         </button>
                     </div>
                 </article>
-            </section>
+            </div>
         </section>
     </main>
     <footer>
