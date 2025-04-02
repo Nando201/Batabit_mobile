@@ -418,34 +418,70 @@ main{
 
 .plans__cards-carousel{
     width: 100%;
-    height: 270px;
+    height: 300px;
+    overflow-x: scroll;
+    overscroll-behavior: contain;
+    scroll-snap-type: x proximity;
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    gap: 10px;
+    gap: 20px;
+}
+
+.plans__cards-carousel::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+.plans__cards-carousel .left{
+    position: absolute;
+    left: 20px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url('./assets/icons/left.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 10;
+    cursor: pointer;
+}
+
+
+.plans__cards-carousel .right{
+    position: absolute;
+    left: 270px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url('./assets/icons/right.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 10;
+    cursor: pointer;
 }
 
 .plans__card{
     position: relative;
+    scroll-snap-align: center;
     width: 60%;
     min-width: 230px;
     max-width: 260px;
-    height: 250px;
+    height: auto;
     padding: 10px 15px;
     border: none;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
     background-color: var(--light-color);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .plans__card .plans__card-badge{
     position: absolute;
     top: -15px;
     width: 100px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     padding: 10px 0px;
     border: none;
     border-radius: 8px;
@@ -465,7 +501,7 @@ main{
 }
 
 .plans__card-item h2{
-    margin-top: 40px;
+    margin-top: 30px;
     margin-bottom: 10px;
     font-size: 1.6rem;
     font-weight: var(--size-500);
@@ -500,19 +536,21 @@ main{
     font-family: var(--font-inter);
     font-weight: var(--size-500);
     color: rgba(117, 117, 117, 1);
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .plans__card-button{
     width: 150px;
     height: 48px;
+    margin: 0 auto;
+    margin-bottom: 10px;
     border-radius: 4px;
-    margin-bottom: 20px;
     border: 2px solid var(--primary-color);
     background-color: rgba(250, 248, 247, 1);
     color: var(--dark-warm-color);
     font-size: 1.4rem;
     font-weight: bold;
+    font-family: "DM Sans", sans-serif;
     transition: all 0.3s ease;
 }
 
@@ -523,5 +561,6 @@ main{
     background-image: url('./assets/icons/arrow-right-orange.svg');
     background-position: center;
     background-size: cover;
-    background-repeat: none;
+    background-repeat: no-repeat;
+    vertical-align: text-bottom;
 }
