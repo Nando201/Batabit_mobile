@@ -1,0 +1,34 @@
+.exchange-rates .exchange-rates__carousel{
+    max-width: 930px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-product__cards{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    max-width: 930px;
+    margin: 0 auto;
+}
+
+.main-product__cards .main-product__cards-item{
+    margin: 0px;
+}
+
+
+.plans__cards-carousel{
+    justify-content: center;
+}
+
+.plans .plans__cards-carousel .left{
+    position: static;
+    display: none;
+}
+
+.plans .plans__cards-carousel .right{
+    position: static;
+    display: none;
+}

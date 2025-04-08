@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 930px)">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +27,7 @@
                 <h2>Visibilizan todas las tasas de cambio</h2>
                 <p>Traemos información en tiempo real de las casas de cambio y las monedas más importantes del mundo.</p>
             </div>
-            <section class="exchange-rates__table">
+            <section class="exchange-rates__carousel">
                 <div class="exchange-rates__table exchange-rates__table--currency">
                     <p class="exchange-rates__title exchange-rates__title--currency">Monedas</p>
                     <div class="exchange-rates__table-container">
@@ -53,8 +54,6 @@
                         <p><b>Actualizado:</b> 19 Julio 23:45</p>
                     </div>
                 </div>
-            </section>
-            <section class="exchange-rates__table">
                 <div class="exchange-rates__table exchange-rates__table--secondary">
                     <p class="exchange-rates__title exchange-rates__title--secondary">Comisiones</p>
                     <div class="exchange-rates__table-container">
@@ -112,7 +111,7 @@
                 </article>
             </section>
         </section>
-        <section class="container__img-bitcoin">
+        <section id="container__img-bitcoin" class="container__img-bitcoin">
             <h2>Conocelo hoy</h2>
         </section>
         <section id="plans" class="plans">
@@ -171,10 +170,16 @@
         </section>
     </main>
     <footer>
-        <p>Linkedin</p>
-        <p>Crunchbase</p>
-        <p>Hackernews</p>
-        <img src="./assets/icons/only_logo.svg" alt="">
+        <div class="footer__links">
+            <ul>
+                <li><a href="#">Linkedin</a></li>
+                <li><a href="#">Crunchbase</a></li>
+                <li><a href="#">Hackernews</a></li>
+            </ul>
+        </div>
+        <div class="footer__img">
+            <img loading="lazy" src="./assets/icons/only_logo.svg" alt="Logo de Batabit 2020">
+        </div>
     </footer>
 </body>
 </html>
